@@ -1,115 +1,147 @@
 {
-  "campaign": "Salvage Rights",
+  "campaign": "Ghosts in Hyperspace",
   "characters": [
     {
-      "name": "Kess Varyn",
-      "liveId": "kess",
-      "career": "Explorer/Engineer — Former Professor",
+      "name": "Sabrina",
+      "liveId": "sabrina",
+      "career": "Smuggler — Pilot/Face",
       "species": "Human",
-      "updated": "2026-07-10T00:00:00Z",
+      "updated": "2026-07-21T00:00:00Z",
       "vitals": {
         "wounds": { "current": 0, "threshold": 12 },
-        "strain": { "current": 0, "threshold": 11 },
-        "soak": 3,
+        "strain": { "current": 0, "threshold": 13 },
+        "soak": 4,
         "criticalInjuries": []
       },
-      "destiny": { "light": 1, "dark": 2 },
-      "xp": { "available": 5, "total": 0 },
-      "credits": 0,
+      "destiny": { "light": 0, "dark": 2 },
+      "xp": { "available": 40, "total": 40 },
+      "credits": 2850,
       "inventory": [
-        { "name": "Party sale proceeds", "note": "35,000 credits held in a shared party pool, allocation unverified" },
-        { "name": "Blaster Pistol", "note": "exact profile unverified in source ledger" },
-        { "name": "Captured Cygnus Carbine", "note": "exact profile unverified in source ledger" },
-        { "name": "Mechanic Toolkit, Portable Scanner, Utility Harness" },
-        { "name": "Heavy Work Jacket", "note": "+1 Soak, included in derived stats" },
-        { "name": "Cygnus Berth Clearance Tag" }
+        { "name": "Heavy Blaster Pistol" },
+        { "name": "Laminate Armor", "note": "Worn, Soak 4 total" },
+        { "name": "Comlink & smuggler gear" },
+        { "name": "K-EX routing audit strip", "note": "Keep isolated from readers" }
       ],
       "motivationObligation": {
-        "motivation": "Strongly tempted by dangerous knowledge and technology — tempered by mission discipline and Sel's steadying presence",
-        "obligation": { "type": "", "value": 0, "note": "" }
+        "motivation": "The Rebellion must own its mess — she is not their disposable courier",
+        "obligation": { "type": "Debt", "value": 15, "note": "Corellian creditors" }
       },
-      "characteristics": { "brawn": 2, "agility": 3, "intellect": 4, "cunning": 2, "willpower": 2, "presence": 2 },
+      "characteristics": { "brawn": 2, "agility": 3, "intellect": 2, "cunning": 3, "willpower": 2, "presence": 3 },
       "skills": [
-        { "name": "Astrogation", "rank": 1, "career": true },
-        { "name": "Computers", "rank": 1, "career": true },
+        { "name": "Charm", "rank": 1, "career": false },
+        { "name": "Computers", "rank": 1, "career": false },
         { "name": "Cool", "rank": 1, "career": false },
-        { "name": "Cybernetics", "rank": 1, "career": false },
-        { "name": "Discipline", "rank": 1, "career": true },
-        { "name": "Knowledge: Education", "rank": 1, "career": false },
-        { "name": "Knowledge: Outer Rim", "rank": 1, "career": true },
-        { "name": "Knowledge: Xenology", "rank": 1, "career": true },
-        { "name": "Mechanics", "rank": 2, "career": true },
-        { "name": "Negotiation", "rank": 1, "career": false },
+        { "name": "Coordination", "rank": 1, "career": true },
+        { "name": "Deception", "rank": 2, "career": true },
+        { "name": "Knowledge: Underworld", "rank": 2, "career": true },
+        { "name": "Negotiation", "rank": 2, "career": false },
         { "name": "Perception", "rank": 1, "career": true },
-        { "name": "Piloting: Space", "rank": 2, "career": true },
-        { "name": "Ranged: Light", "rank": 1, "career": false },
-        { "name": "Skulduggery", "rank": 1, "career": false },
-        { "name": "Streetwise", "rank": 1, "career": true },
-        { "name": "Vigilance", "rank": 1, "career": false }
-      ],
-      "talents": [
-        { "name": "Clever Retort", "rank": 1, "tier": 1, "description": "Once per encounter, add two automatic Threat to another character's social check." },
-        { "name": "Solid Repairs", "rank": 1, "tier": 1, "description": "Repairs +1 hull trauma per rank whenever Kess repairs a starship or vehicle." },
-        { "name": "Former Professor — Xenology", "rank": 1, "tier": 1, "description": "Knowledge: Xenology becomes a career skill. Once per session, collect a small favour from a higher-learning contact." },
-        { "name": "Signature Vehicle — Wayfarer's Debt", "rank": 1, "tier": 1, "description": "Upgrade Mechanics checks made to work on the Wayfarer's Debt once. Silhouette prerequisite unverified; campaign purchase accepted." },
-        { "name": "Fine Tuning", "rank": 1, "tier": 2, "description": "Reduce 1 additional system strain per rank when reducing a starship/vehicle's system strain." },
-        { "name": "Scathing Tirade", "rank": 1, "tier": 2, "description": "Average Coercion check; successes and Advantage may inflict strain on enemies at short range." },
-        { "name": "Pride and Joy — Wayfarer's Debt", "rank": 1, "tier": 2, "description": "Upgrade social checks made within short range of the named vehicle, if the silhouette prerequisite is met (unverified)." },
-        { "name": "Applied Research", "rank": 1, "tier": 3, "description": "Once per session, use an appropriate Knowledge skill and Intellect in place of a required skill/characteristic when justified by research." },
-        { "name": "Distinctive Style", "rank": 1, "tier": 3, "description": "Before a Computers check to hack/breach a secured system, add two Success and two Threat to the result." },
-        { "name": "Gearhead", "rank": 1, "tier": 1, "description": "Removes one Setback die from Mechanics checks per rank and halves attachment-mod credit costs. Exact tier/rank unverified in the restored ledger — listed as a single purchase." }
-      ],
-      "weapons": [],
-      "armor": { "name": "Heavy Work Jacket", "soakBonus": 1, "defenseBonus": 0 }
-    },
-    {
-      "name": "Carsk Den'Niv",
-      "liveId": "carsk",
-      "career": "Hired Gun — Bodyguard",
-      "species": "Bothan",
-      "updated": "2026-07-10T00:00:00Z",
-      "vitals": {
-        "wounds": { "current": 0, "threshold": 13 },
-        "strain": { "current": 0, "threshold": 14 },
-        "soak": 5,
-        "criticalInjuries": []
-      },
-      "destiny": { "light": 1, "dark": 2 },
-      "xp": { "available": 0, "total": 0 },
-      "credits": 0,
-      "inventory": [
-        { "name": "Party sale proceeds", "note": "35,000 credits held in a shared party pool, allocation unverified" },
-        { "name": "Comlink and utility belt" },
-        { "name": "Power packs", "note": "one standard reload, one captured Cygnus power pack" },
-        { "name": "Utility items", "note": "maintenance gloves, glowrod, sealed breath mask, compact utility cutter" },
-        { "name": "Encrypted bounty puck", "note": "recovered from Drenn — partial Kallax contract/claim data" },
-        { "name": "Drenn's comm", "note": "may contain recent Kallax-team communications" }
-      ],
-      "motivationObligation": {
-        "motivation": "Collects fragments of rebel intelligence hoping to find those responsible for his family's deaths, or harm the wider movement that took them",
-        "obligation": { "type": "Obsession", "value": 20, "note": "Triggered this session — the planet's colours stir the memory; all PCs at -1 strain threshold this session, Carsk at -2" }
-      },
-      "characteristics": { "brawn": 3, "agility": 3, "intellect": 2, "cunning": 3, "willpower": 3, "presence": 2 },
-      "skills": [
-        { "name": "Athletics", "rank": 2, "career": true },
-        { "name": "Discipline", "rank": 1, "career": true },
-        { "name": "Perception", "rank": 3, "career": true },
-        { "name": "Ranged: Heavy", "rank": 1, "career": true },
-        { "name": "Ranged: Light", "rank": 1, "career": true },
-        { "name": "Resilience", "rank": 1, "career": true },
+        { "name": "Piloting: Space", "rank": 3, "career": true },
+        { "name": "Ranged: Light", "rank": 2, "career": false },
+        { "name": "Skulduggery", "rank": 1, "career": true },
+        { "name": "Stealth", "rank": 1, "career": false },
+        { "name": "Streetwise", "rank": 2, "career": true },
         { "name": "Vigilance", "rank": 1, "career": true }
       ],
       "talents": [
-        { "name": "Rapid Recovery", "rank": 1, "tier": 1, "description": "Exact mechanical text unverified in the restored ledger; talent and tier are confirmed." },
-        { "name": "Worlds War Vet", "rank": 1, "tier": 1, "description": "Ranged (Heavy) or Resilience becomes a career skill. Once per session, call in a small favour from current/former military personnel connected to his service background." },
-        { "name": "Bad Cop", "rank": 1, "tier": 2, "description": "Spend Advantage on a Coercion or Deception check to upgrade an ally's later social check against the same target during the encounter." }
+        { "name": "Quick Draw", "rank": 1, "tier": 1, "description": "Once per round, draw or holster an easily accessible weapon/item as an incidental." },
+        { "name": "Black Market Contacts", "rank": 1, "tier": 1, "description": "Add Boost per rank to checks made to find and purchase illegal or restricted goods." },
+        { "name": "Convincing Demeanor", "rank": 1, "tier": 1, "description": "Upgrade the difficulty of Perception checks made by others to detect deception once per rank." }
       ],
       "weapons": [
-        { "name": "Blaster Rifle", "skill": "Ranged: Heavy", "damage": 9, "crit": 3, "range": "Long", "special": "Stun setting" },
-        { "name": "Blaster Pistol", "skill": "Ranged: Light", "damage": 6, "crit": 3, "range": "Medium", "special": "Stun setting" },
-        { "name": "Vibroknife", "skill": "Melee", "damage": "Brawn+1", "crit": 2, "range": "Engaged", "special": "Pierce 2" }
+        { "name": "Heavy Blaster Pistol", "skill": "Ranged: Light", "damage": 7, "crit": 3, "range": "Medium", "special": "Stun setting" }
       ],
-      "armor": { "name": "Modified Cresh \"Luck\" Armour", "soakBonus": 2, "defenseBonus": 1 }
+      "armor": { "name": "Laminate Armor", "soakBonus": 2, "defenseBonus": 0 }
+    },
+    {
+      "name": "Kett",
+      "liveId": "kett",
+      "career": "Hired Gun — Demolitionist/Gunner (retinue)",
+      "species": "Human",
+      "updated": "2026-07-21T00:00:00Z",
+      "vitals": {
+        "wounds": { "current": 0, "threshold": 14 },
+        "strain": { "current": 0, "threshold": 12 },
+        "soak": 5,
+        "criticalInjuries": []
+      },
+      "destiny": { "light": 0, "dark": 2 },
+      "xp": { "available": 15, "total": 40 },
+      "credits": 0,
+      "inventory": [
+        { "name": "Combat Armor", "note": "+2 Soak, +1/+1 Defense" },
+        { "name": "Demolitions kit + detonite charges ×2" }
+      ],
+      "motivationObligation": {
+        "motivation": "Keep the Folly in one piece; destroy things that deserve it",
+        "obligation": { "type": "—", "value": 0, "note": "Allied retinue, no personal Obligation tracked" }
+      },
+      "characteristics": { "brawn": 3, "agility": 3, "intellect": 2, "cunning": 2, "willpower": 2, "presence": 2 },
+      "skills": [
+        { "name": "Athletics", "rank": 1, "career": false },
+        { "name": "Brawl", "rank": 1, "career": false },
+        { "name": "Discipline", "rank": 2, "career": false },
+        { "name": "Gunnery", "rank": 3, "career": false },
+        { "name": "Mechanics", "rank": 2, "career": false },
+        { "name": "Vigilance", "rank": 1, "career": false },
+        { "name": "Knowledge: Warfare", "rank": 1, "career": false }
+      ],
+      "talents": [
+        { "name": "Resourceful Mechanic", "rank": 1, "tier": 1, "description": "Once per session, requisition or improvise a tool or spare part needed for a Mechanics check." },
+        { "name": "Solid Repairs", "rank": 1, "tier": 1, "description": "Repairs +1 hull trauma per rank whenever Kett repairs a starship or vehicle." },
+        { "name": "Brace", "rank": 1, "tier": 1, "description": "Suffer strain to remove Setback from checks caused by environmental or forced-movement effects." },
+        { "name": "Tinkerer", "rank": 2, "tier": 2, "description": "Add Boost per rank to checks made to repair or modify items or vehicles." }
+      ],
+      "weapons": [
+        { "name": "Heavy Blaster Rifle", "skill": "Ranged: Heavy", "damage": 10, "crit": 3, "range": "Long", "special": "Cumbersome 3" },
+        { "name": "Blaster Pistol", "skill": "Ranged: Light", "damage": 6, "crit": 3, "range": "Medium", "special": "Stun setting" }
+      ],
+      "armor": { "name": "Combat Armor", "soakBonus": 2, "defenseBonus": 1 }
+    },
+    {
+      "name": "Talli",
+      "liveId": "talli",
+      "career": "Combat Medic — Imperial-Procedure Analyst (retinue)",
+      "species": "Human",
+      "updated": "2026-07-21T00:00:00Z",
+      "vitals": {
+        "wounds": { "current": 0, "threshold": 12 },
+        "strain": { "current": 0, "threshold": 13 },
+        "soak": 4,
+        "criticalInjuries": []
+      },
+      "destiny": { "light": 0, "dark": 2 },
+      "xp": { "available": 15, "total": 40 },
+      "credits": 0,
+      "inventory": [
+        { "name": "Laminate Armor", "note": "Worn, Soak 4 total" },
+        { "name": "Medkit + wrist/medical scanner" }
+      ],
+      "motivationObligation": {
+        "motivation": "Redemption — preventing Imperial systems from consuming more victims",
+        "obligation": { "type": "—", "value": 0, "note": "Allied retinue, no personal Obligation tracked" }
+      },
+      "characteristics": { "brawn": 2, "agility": 3, "intellect": 3, "cunning": 2, "willpower": 3, "presence": 2 },
+      "skills": [
+        { "name": "Discipline", "rank": 2, "career": false },
+        { "name": "Medicine", "rank": 2, "career": false },
+        { "name": "Mechanics", "rank": 1, "career": false },
+        { "name": "Perception", "rank": 1, "career": false },
+        { "name": "Vigilance", "rank": 1, "career": false },
+        { "name": "Ranged: Heavy", "rank": 2, "career": false },
+        { "name": "Knowledge: Warfare", "rank": 1, "career": false }
+      ],
+      "talents": [
+        { "name": "Surgeon", "rank": 1, "tier": 1, "description": "Increase the wounds healed by a Medicine check by 1 per rank, and treat one additional Critical Injury per use." },
+        { "name": "Second Wind", "rank": 1, "tier": 1, "description": "Once per session as an incidental, heal strain equal to ranks in Second Wind." },
+        { "name": "Brace", "rank": 1, "tier": 1, "description": "Suffer strain to remove Setback from checks caused by environmental or forced-movement effects." },
+        { "name": "Combat Medicine", "rank": 2, "tier": 2, "description": "Before a Medicine check, add 1 automatic Success per rank; the patient suffers 2 strain after the check resolves." }
+      ],
+      "weapons": [
+        { "name": "Blaster Carbine", "skill": "Ranged: Heavy", "damage": 9, "crit": 3, "range": "Medium", "special": "Stun setting" },
+        { "name": "Blaster Pistol", "skill": "Ranged: Light", "damage": 6, "crit": 3, "range": "Medium", "special": "Stun setting, untrained" }
+      ],
+      "armor": { "name": "Laminate Armor", "soakBonus": 2, "defenseBonus": 0 }
     }
   ]
 }
