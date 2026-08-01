@@ -45,7 +45,7 @@
       ],
       "talents": [
         { "name": "Quick Draw", "rank": 1, "tier": 1, "description": "Once per round, draw or holster an easily accessible weapon/item as an incidental." },
-        { "name": "Black Market Contacts", "rank": 1, "tier": 1, "description": "Add Boost per rank to checks made to find and purchase illegal or restricted goods." },
+        { "name": "Black Market Contacts", "rank": 1, "tier": 1, "description": "Add Boost per rank to checks made to find and purchase illegal or restricted goods. [Skill not yet mapped for the boost-die display — confirm which skill this applies to (e.g. Streetwise or Negotiation) so it can be tagged.]" },
         { "name": "Convincing Demeanor", "rank": 1, "tier": 1, "description": "Upgrade the difficulty of Perception checks made by others to detect deception once per rank." }
       ],
       "weapons": [
@@ -90,13 +90,13 @@
         { "name": "Resourceful Mechanic", "rank": 1, "tier": 1, "description": "Once per session, requisition or improvise a tool or spare part needed for a Mechanics check." },
         { "name": "Solid Repairs", "rank": 1, "tier": 1, "description": "Repairs +1 hull trauma per rank whenever Kett repairs a starship or vehicle." },
         { "name": "Brace", "rank": 1, "tier": 1, "description": "Suffer strain to remove Setback from checks caused by environmental or forced-movement effects." },
-        { "name": "Tinkerer", "rank": 2, "tier": 2, "description": "Add Boost per rank to checks made to repair or modify items or vehicles." }
+        { "name": "Tinkerer", "rank": 2, "tier": 2, "description": "Add Boost per rank to checks made to repair or modify items or vehicles.", "boostsSkills": ["Mechanics"] }
       ],
       "weapons": [
         { "name": "Heavy Blaster Rifle", "skill": "Ranged: Heavy", "damage": 10, "crit": 3, "range": "Long", "special": "Cumbersome 3" },
         { "name": "Blaster Pistol", "skill": "Ranged: Light", "damage": 6, "crit": 3, "range": "Medium", "special": "Stun setting" }
       ],
-      "armor": { "name": "Combat Armor", "soakBonus": 2, "defenseBonus": 1 }
+      "armor": { "name": "Combat Armor", "soakBonus": 2, "rangedDefense": 1, "meleeDefense": 1 }
     },
     {
       "name": "Talli",
