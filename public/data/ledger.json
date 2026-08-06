@@ -143,5 +143,6 @@
       ],
       "armor": { "name": "Laminate Armor", "soakBonus": 2, "defenseBonus": 0 }
     }
-  ]
+  ],
+  "npcs": []
 }
