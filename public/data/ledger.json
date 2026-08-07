@@ -144,5 +144,78 @@
       "armor": { "name": "Laminate Armor", "soakBonus": 2, "defenseBonus": 0 }
     }
   ],
-  "npcs": []
+  "npcs": [
+    {
+      "name": "Lieutenant Oran Vale",
+      "role": "Imperial Logistics Bureau Defector / HALCYON Witness",
+      "species": "Human",
+      "gender": "Male",
+      "status": "Aboard the Folly — medically stabilized, no Critical Injury; hunted by Commander Sol.",
+      "summary": "A defector from the Imperial Logistics Bureau who helped write HALCYON's routing masks and is now hunted for it.",
+      "whatPartyKnows": "Explained that HALCYON tracks route-authority chains rather than passwords, and that combining his revocation authority with the party's datapuck could open a route inward — or burn their identities. Under direct questioning, admitted he likely reviewed the flight-plan changes that doomed Mara's medical skiff and its medic, Reyes. Answered Mara honestly rather than defensively; she asked for space rather than resolution. Trusts Sabrina, who promised to be present when that conversation continues."
+    },
+    {
+      "name": "Mara Venn",
+      "role": "Rebel Medical-Skiff Survivor",
+      "species": "Human",
+      "gender": "Female",
+      "status": "Aboard the Folly — traumatized survivor, opted for a comms/eyes-only role in Operation Clean Vector.",
+      "summary": "A young Rebel survivor of a medical-skiff ambush, fierce and traumatized, still deciding whether Vale is defector or murderer.",
+      "whatPartyKnows": "Learned that Vale likely reviewed the flight-plan changes that doomed her skiff's medic, Reyes, before he defected — and chose to ask for space rather than confront him further, real growth from her earlier instinct to assume the worst. Recognized the Korda reception posture as genuinely Rebel (\"That's them.\"). Partial trust in Sabrina; feels safe with Talli's medic manner but wary of her Imperial bearing; Kett both frightens and reassures her."
+    },
+    {
+      "name": "Commander Veyra Sol",
+      "role": "Imperial HALCYON Field Commander",
+      "species": "Human (presumed)",
+      "gender": "Female",
+      "status": "Not yet seen in person — known only as a calm voice on a recovered channel.",
+      "summary": "The primary antagonist: a methodical, patient Imperial officer running the local HALCYON field response and hunting the Folly.",
+      "whatPartyKnows": "Uses systems, authority, and trust as weapons, and is willing to burn witnesses and assets rather than let evidence slip away. Operating pattern pieced together so far: passive listening before active pursuit, false rescue or safety vectors before open force, and direct pursuit only when confident a target can't flee. Commands elite assets including a black compliance cutter."
+    },
+    {
+      "name": "Lieutenant Renn",
+      "role": "Rebel Flight Lead, Korda Expanse Cell",
+      "species": "Human",
+      "gender": "Male",
+      "status": "Active contact — recurring, friendly.",
+      "summary": "Led the boarding of the Folly and now serves as the party's primary Rebel go-between for tasking and rewards.",
+      "whatPartyKnows": "Disciplined and tired but fundamentally decent; genuinely grateful for the delivered intelligence packet. Shared the cell's surveillance notes on the waystation — a rotating 4-6 logistics-security troopers and a duty officer nicknamed the \"Quartermaster.\""
+    },
+    {
+      "name": "Commissar Idrin",
+      "role": "Rebel Political / Verification Officer",
+      "species": "Not specified in ledger",
+      "gender": "Female",
+      "status": "Active contact — voice-only so far; outranks Renn on this matter.",
+      "summary": "Precise and unemotional political liaison running HALCYON verification for the Rebel cell.",
+      "whatPartyKnows": "Suspicious by professional habit rather than malice, but updates her position when given real evidence. After interviewing Vale and Mara, confirmed HALCYON as a verified threat rather than speculation."
+    },
+    {
+      "name": "Sabrina's Rebel Contact (Compromised Handle)",
+      "role": "Unknown — Rebel Communications Contact",
+      "species": "Not specified in ledger",
+      "gender": "Not specified in ledger",
+      "status": "Compromised — cause unknown.",
+      "summary": "The routing and authentication layer of Sabrina's usual Rebel contact channel has been compromised.",
+      "whatPartyKnows": "The handler's fate and loyalty are unknown; the cause could be HALCYON penetration, Imperial counterintelligence, a captured relay, or an internal leak."
+    },
+    {
+      "name": "Corellian Creditors",
+      "role": "Debt Holders",
+      "species": "Not specified in ledger",
+      "gender": "Not specified in ledger",
+      "status": "Off-screen — source of Sabrina's Obligation (Debt 15).",
+      "summary": "The creditors behind Sabrina's Debt obligation.",
+      "whatPartyKnows": "Have poisoned the black-market repair cradle the crew relies on."
+    },
+    {
+      "name": "Taron's Break Contacts",
+      "role": "Former Operating-Ground Associates",
+      "species": "Not specified in ledger",
+      "gender": "Not specified in ledger",
+      "status": "Off-screen — Taron's Break is currently hot with Imperial attention.",
+      "summary": "Old associates from the crew's prior operating ground.",
+      "whatPartyKnows": "Taron's Break is running hot with Imperial attention after the crew's snare escape; these contacts know the Folly's face."
+    }
+  ]
 }
