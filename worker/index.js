@@ -106,6 +106,20 @@ async function handleLive(request, env, ctx) {
 
 const ROLL_LOG_MAX = 40;
 const CORS_HEADERS = { "access-control-allow-origin": "*", "access-control-allow-methods": "GET, POST, DELETE, OPTIONS", "access-control-allow-headers": "content-type" };
+// Dice pool breakdown (per die type, e.g. { proficiency: 2, difficulty: 3,
+// setback: 2, ... }) — stored alongside the summarised result so the shared
+// log can render the actual pool as icons, not just the outcome. Sanitized
+// to known die-type keys, non-negative integers, capped at a sane per-die
+// maximum so a malformed/malicious body can't bloat a stored entry.
+const POOL_KEYS = ["proficiency", "ability", "boost", "challenge", "difficulty", "setback", "force"];
+// Per-die roll results (one entry per die actually rolled, e.g.
+// { die: "proficiency", symbols: ["s", "a"] }) — stored alongside the pool
+// counts so the shared log can show what each die landed on, not just the
+// pool that was selected. Sanitized to known die/symbol keys and capped so
+// a malformed/malicious body can't bloat a stored entry.
+const SYMBOL_KEYS = ["s", "f", "a", "t", "tr", "d", "lp", "dp"];
+const ROLL_ENTRY_MAX = 20;
+const SYMBOLS_PER_DIE_MAX = 4;
 
 export class RollLog {
   constructor(ctx, env) {
@@ -141,11 +155,30 @@ export class RollLog {
         return new Response(JSON.stringify({ error: "Invalid JSON body" }), { status: 400, headers: { "content-type": "application/json", ...CORS_HEADERS } });
       }
 
+      const pool = {};
+      POOL_KEYS.forEach((key) => {
+        const n = Number(body?.pool?.[key]);
+        pool[key] = Number.isFinite(n) && n > 0 ? Math.min(Math.floor(n), 20) : 0;
+      });
+
+      const rolls = Array.isArray(body?.rolls)
+        ? body.rolls.slice(0, ROLL_ENTRY_MAX).reduce((acc, r) => {
+            if (!POOL_KEYS.includes(r?.die)) return acc;
+            const symbols = Array.isArray(r?.symbols)
+              ? r.symbols.filter((s) => SYMBOL_KEYS.includes(s)).slice(0, SYMBOLS_PER_DIE_MAX)
+              : [];
+            acc.push({ die: r.die, symbols });
+            return acc;
+          }, [])
+        : [];
+
       const entry = {
         id: crypto.randomUUID(),
         ts: Date.now(),
         player: String(body?.player ?? "Unknown").slice(0, 40),
         poolLabel: String(body?.poolLabel ?? "").slice(0, 200),
+        pool,
+        rolls,
         netSuccess: Number.isFinite(body?.netSuccess) ? body.netSuccess : 0,
         netAdvantage: Number.isFinite(body?.netAdvantage) ? body.netAdvantage : 0,
         triumph: Number.isFinite(body?.triumph) ? body.triumph : 0,
