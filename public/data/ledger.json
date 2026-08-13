@@ -217,5 +217,31 @@
       "summary": "Old associates from the crew's prior operating ground.",
       "whatPartyKnows": "Taron's Break is running hot with Imperial attention after the crew's snare escape; these contacts know the Folly's face."
     }
+  ],
+  "locations": [
+    {
+      "name": "Krayt's Folly",
+      "type": "Ship",
+      "current": true,
+      "summary": "The crew's ship — fully repaired and currently in transit toward the HALCYON waystation."
+    },
+    {
+      "name": "Korda Expanse",
+      "type": "Region",
+      "current": true,
+      "summary": "Ion-hazed region where the crew made contact with the Rebel cell; their current operating area."
+    },
+    {
+      "name": "HALCYON Waystation",
+      "type": "Station",
+      "current": true,
+      "summary": "Imperial resupply waystation targeted for Operation Clean Vector — the crew is en route to raid it for a courier-brain calibration core."
+    },
+    {
+      "name": "The Ore Station",
+      "type": "Station",
+      "current": false,
+      "summary": "Gutted ore-processing station where the crew docked for repairs and treatment after the cutter engagement; since departed."
+    }
   ]
 }
