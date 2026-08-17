@@ -2,6 +2,7 @@
   "destiny": { "light": 0, "dark": 2 },
   "wounds": { "sabrina": 0, "kett": 0, "talli": 0 },
   "strain": { "sabrina": 0, "kett": 0, "talli": 0 },
+  "criticalInjuries": { "sabrina": [], "kett": [], "talli": [] },
   "initiative": {
     "order": [],
     "taken": 0
